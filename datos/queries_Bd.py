@@ -144,38 +144,84 @@ class QueriesBd:
                 conexion_sql.cursor.execute(QUERY)
                 conexion_sql.cursor.commit()
 
-    def consulta_general_naves(self):
-        with BdManager() as conexion_sql:
-            QUERY = f"""
-                    /*
-                    Arg: None
-                    Return: 
-                        Todas las naves almacenadas en la tabla
-                    */
-                    SELECT  Id, 
-                            Nombre,
-                            Anio,
-                            Pais, 
-                            Peso, 
-                            Velocidad
-                    FROM Estacion_Espacial_Sofka.dbo.Naves_Tripuladas;
-                    
-                    """
-            conexion_sql.cursor.execute(QUERY)
-            consulta = conexion_sql.cursor.fetchall()
-        return consulta
-
-    def consulta_avanzada_naves(self, tipo_de_nave, año, pais):
-        if tipo_de_nave == "No Tripulada":
+    def consulta_general_naves(self, tipo_de_nave):
+        if tipo_de_nave == "Tripulada":
             with BdManager() as conexion_sql:
                 QUERY = f"""
                         /*
                         Arg: None
                         Return: 
-                            Todas las naves almacenadas en la tabla "Naves"
+                            Todas las naves almacenadas en la tabla
                         */
-                        SELECT * FROM [Estacion_Espacial_Sofka].[dbo].[Naves_No_Tripuladas];
-                            WHERE Año = {año} AND Pais = '{pais}';
+                        SELECT  Nombre,
+                                Pais, 
+                                Peso, 
+                                Velocidad,
+                                Anio
+                        FROM Estacion_Espacial_Sofka.dbo.Naves_Tripuladas;
+                        
+                        """
+                conexion_sql.cursor.execute(QUERY)
+                consulta = conexion_sql.cursor.fetchall()
+            return consulta
+
+        elif tipo_de_nave == "No Tripulada":
+            with BdManager() as conexion_sql:
+                QUERY = f"""
+                        /*
+                        Arg: None
+                        Return: 
+                            Todas las naves almacenadas en la tabla
+                        */
+                        SELECT  Nombre,
+                                Pais, 
+                                Peso, 
+                                Velocidad,
+                                Anio
+                        FROM Estacion_Espacial_Sofka.dbo.Naves_No_Tripuladas;
+                        
+                        """
+                conexion_sql.cursor.execute(QUERY)
+                consulta = conexion_sql.cursor.fetchall()
+            return consulta
+
+        elif tipo_de_nave == "Lanzadera":
+            with BdManager() as conexion_sql:
+                QUERY = f"""
+                        /*
+                        Arg: None
+                        Return: 
+                            Todas las naves almacenadas en la tabla
+                        */
+                        SELECT  Nombre,
+                                Pais, 
+                                Peso, 
+                                Velocidad,
+                                Anio
+                        FROM Estacion_Espacial_Sofka.dbo.Naves_Lanzaderas;
+                        
+                        """
+                conexion_sql.cursor.execute(QUERY)
+                consulta = conexion_sql.cursor.fetchall()
+            return consulta
+
+    def consulta_avanzada_naves(self, tipo_de_nave, anio_nave, pais_nave):
+        if tipo_de_nave == "No Tripulada":
+            with BdManager() as conexion_sql:
+                QUERY = f"""
+                        /*
+                        Arg: anio_nave, pais_nave
+                        Return: 
+                            Todas las naves almacenadas en la tabla que cumplen con los parametros
+                        */
+                        SELECT  Nombre,
+                                Pais,
+                                Peso,
+                                Velocidad,
+                                Anio
+                        FROM [Estacion_Espacial_Sofka].[dbo].[Naves_No_Tripuladas]
+                            WHERE Anio LIKE '%{anio_nave}%' 
+                                AND Pais LIKE '%{pais_nave}%';
                         
                         """
                 conexion_sql.cursor.execute(QUERY)
@@ -186,12 +232,18 @@ class QueriesBd:
             with BdManager() as conexion_sql:
                 QUERY = f"""
                             /*
-                            Arg: None
+                            Arg: anio_nave, pais_nave
                             Return: 
-                                Todas las naves almacenadas en la tabla "Naves"
+                                Todas las naves almacenadas en la tabla que cumplen con los parametros
                             */
-                            SELECT * FROM [Estacion_Espacial_Sofka].[dbo].[Naves_Tripuladas]
-                                WHERE Año = {año} AND Pais = '{pais}';
+                            SELECT  Nombre,
+                                    Pais,
+                                    Peso,
+                                    Velocidad,
+                                    Anio
+                            FROM [Estacion_Espacial_Sofka].[dbo].[Naves_Tripuladas]
+                                WHERE Anio LIKE '%{anio_nave}%' 
+                                    AND Pais LIKE '%{pais_nave}%';
                             
                             """
                 conexion_sql.cursor.execute(QUERY)
@@ -202,12 +254,18 @@ class QueriesBd:
             with BdManager() as conexion_sql:
                 QUERY = f"""
                             /*
-                            Arg: None
+                            Arg: anio_nave, pais_nave
                             Return: 
-                                Todas las naves almacenadas en la tabla "Naves"
+                                Todas las naves almacenadas en la tabla que cumplen con los parametros
                             */
-                            SELECT * FROM [Estacion_Espacial_Sofka].[dbo].[Naves_Lanzaderas]
-                                WHERE Año = {año} AND Pais = '{pais}';
+                            SELECT  Nombre,
+                                    Pais,
+                                    Peso,
+                                    Velocidad,
+                                    Anio
+                            FROM [Estacion_Espacial_Sofka].[dbo].[Naves_Lanzaderas]
+                                WHERE Anio LIKE '%{anio_nave}%' 
+                                    AND Pais LIKE '%{pais_nave}%';
                             
                             """
                 conexion_sql.cursor.execute(QUERY)

@@ -61,4 +61,4 @@ class Tripulada(Nave):  # Definir la clase
 
     def acoplamiento(self):  # Abrir paracaidas
         nombre = self.obtener_nombre()
-        return f"La {nombre}, se ha acoplado a la estación éxitosamente"
+        return f"La nave {nombre}, se ha acoplado a la estación éxitosamente"

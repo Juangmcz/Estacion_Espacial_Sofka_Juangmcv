@@ -1,0 +1,18 @@
+<RCC>
+  <qresource prefix="iconos">
+    <file>recursos/icons8-achicar-100.png</file>
+    <file>recursos/icons8-expandir-100.png</file>
+    <file>recursos/icons8-menos-64.png</file>
+    <file>recursos/icons8-cerrar-ventana-100.png</file>
+    <file>recursos/icons8-aprobar-y-actualizar-64.png</file>
+    <file>recursos/icons8-basura-48.png</file>
+    <file>recursos/icons8-ciencia-ficción-48.png</file>
+    <file>recursos/icons8-cohete-48.png</file>
+    <file>recursos/icons8-satelite-64.png</file>
+    <file>recursos/icons8-search-100.png</file>
+    <file>recursos/icons8-menú-48.png</file>
+  </qresource>
+  <qresource prefix="imagenes">
+    <file>recursos/jeremy-perkins-uhjiu8FjnsQ-unsplash.jpg</file>
+  </qresource>
+</RCC>

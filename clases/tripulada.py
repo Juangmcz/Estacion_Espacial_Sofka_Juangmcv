@@ -6,15 +6,15 @@ from clases.nave import Nave  # Importar la clase Nave
 class Tripulada(Nave):  # Definir la clase
     def __init__(
         self,
-        pais,
-        peso,
-        anio,
-        nombre,
-        velocidad,
-        orbita,
-        tipo_mision,
-        capacidad,
-        nombre_mision,
+        pais=None,
+        peso=None,
+        anio=None,
+        nombre=None,
+        velocidad=None,
+        orbita=None,
+        tipo_mision=None,
+        capacidad=None,
+        nombre_mision=None,
     ):  # Inicializar la clase
         super().__init__(
             pais, peso, anio, nombre, velocidad
@@ -40,25 +40,25 @@ class Tripulada(Nave):  # Definir la clase
     # =============== Métodos abstractos heredados =============== #
     def despegar(self):  # Despegar la nave
         nombre = self.obtener_nombre()
-        print(f"La nave {nombre} ha despegado")
+        return f"La nave {nombre} ha despegado"
 
     def cuenta_regresiva(self):  # Cuenta regresiva para el despegue
         nombre = self.obtener_nombre()
-        print(f"Lanzamiento de la nave {nombre}, en 3,2,1...")
+        return f"Lanzamiento de la nave {nombre}, en 3,2,1..."
 
     def chequeo_general(self):  # Chequeo general de la nave
         nombre = self.obtener_nombre()
-        print(f"Chequeo general de la nave {nombre} fue realizado con éxito")
+        return f"Chequeo general de la nave {nombre} fue realizado con éxito"
 
     # =============== Métodos propios =============== #
     def aterrizar(self):  # Aterrizar la nave
         nombre = self.obtener_nombre()
-        print(f"El aterrizaje de la nave {nombre} fue un éxito")
+        return f"El aterrizaje de la nave {nombre} fue un éxito"
 
     def repostar(self):  # Repostar la nave
         nombre = self.obtener_nombre()
-        print(f"La nave {nombre} ha repostado combustible éxitosamente")
+        return f"La nave {nombre} ha repostado combustible éxitosamente"
 
     def acoplamiento(self):  # Abrir paracaidas
         nombre = self.obtener_nombre()
-        print(f"La {nombre}, se ha acoplado a la estación éxitosamente")
+        return f"La {nombre}, se ha acoplado a la estación éxitosamente"

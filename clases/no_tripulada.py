@@ -6,15 +6,15 @@ from clases.nave import Nave  # Importar la clase Nave
 class NoTripulada(Nave):  # Definir la clase
     def __init__(
         self,
-        pais,
-        peso,
-        anio,
-        nombre,
-        velocidad,
-        empuje,
-        combustible,
-        planeta_exploracion,
-        cantidad_motores,
+        pais=None,
+        peso=None,
+        anio=None,
+        nombre=None,
+        velocidad=None,
+        empuje=None,
+        combustible=None,
+        planeta_exploracion=None,
+        cantidad_motores=None,
     ):  # Inicializar la clase
         super().__init__(
             pais, peso, anio, nombre, velocidad
@@ -40,25 +40,25 @@ class NoTripulada(Nave):  # Definir la clase
     # =============== Métodos abstractos heredados =============== #
     def despegar(self):  # Despegar la nave
         nombre = self.obtener_nombre()
-        print(f"La nave {nombre} ha despegado")
+        return f"La nave {nombre} ha despegado"
 
     def cuenta_regresiva(self):  # Cuenta regresiva para el despegue
         nombre = self.obtener_nombre()
-        print(f"Lanzamiento de la nave {nombre}, en 3,2,1...")
+        return f"Lanzamiento de la nave {nombre}, en 3,2,1..."
 
     def chequeo_general(self):  # Chequeo general de la nave
         nombre = self.obtener_nombre()
-        print(f"Chequeo general de la nave {nombre} fue realizado con éxito")
+        return f"Chequeo general de la nave {nombre} fue realizado con éxito"
 
     # =============== Métodos propios =============== #
     def explorar(self):  # Explorar el planeta
         nombre = self.obtener_nombre()
-        print(f"La nave {nombre} esta lista para iniciar exploración")
+        return f"La nave {nombre} esta lista para iniciar exploración"
 
     def amartizar(self):  # Amartizar la nave
         nombre = self.obtener_nombre()
-        print(f"El amartizaje de la nave {nombre} fue un éxito")
+        return f"El amartizaje de la nave {nombre} fue un éxito"
 
     def corregir_trayectoria(self):  # Corregir la trayectoria
         nombre = self.obtener_nombre()
-        print(f"La trayectoria de la nave {nombre}, ha sido corregida con éxito")
+        return f"La trayectoria de la nave {nombre}, ha sido corregida con éxito"

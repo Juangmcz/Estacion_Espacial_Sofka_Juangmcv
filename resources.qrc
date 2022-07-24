@@ -1,5 +1,8 @@
 <RCC>
   <qresource prefix="iconos">
+    <file>recursos/icons8-proceso-50.png</file>
+    <file>recursos/icons8-lamp-64.png</file>
+    <file>recursos/icons8-mantenimiento-48.png</file>
     <file>recursos/icons8-achicar-100.png</file>
     <file>recursos/icons8-expandir-100.png</file>
     <file>recursos/icons8-menos-64.png</file>

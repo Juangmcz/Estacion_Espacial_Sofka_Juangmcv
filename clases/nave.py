@@ -27,8 +27,6 @@ class Nave(metaclass=ABCMeta):  # Definir la clase
     def obtener_velocidad(self):
         return self.__velocidad
 
-    # =============== Métodos setters =============== #
-
     # =============== Métodos abstractos =============== #
     @abstractmethod
     def despegar(self):  # Despegar la nave

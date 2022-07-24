@@ -1,0 +1,1227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>944</width>
+    <height>602</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Nave Espacial Sofka</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextOnly</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/imagenes/recursos/jeremy-perkins-uhjiu8FjnsQ-unsplash.jpg);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout" stretch="1,8">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frame_encabezado">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+background-color: #000000ff;
+border-radius:20px;
+}
+QPushButtonhover{
+background-color: rgb(61,61,61);
+border-radius:20px;
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QPushButton" name="btn_menu">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="../resources.qrc">
+              <normaloff>:/iconos/recursos/icons8-menú-48.png</normaloff>:/iconos/recursos/icons8-menú-48.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>100</width>
+              <height>38</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_minimizar">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="../resources.qrc">
+              <normaloff>:/iconos/recursos/icons8-menos-64.png</normaloff>:/iconos/recursos/icons8-menos-64.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>38</width>
+              <height>38</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_reducir">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="../resources.qrc">
+              <normaloff>:/iconos/recursos/icons8-achicar-100.png</normaloff>:/iconos/recursos/icons8-achicar-100.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>38</width>
+              <height>38</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_ampliar">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="../resources.qrc">
+              <normaloff>:/iconos/recursos/icons8-expandir-100.png</normaloff>:/iconos/recursos/icons8-expandir-100.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>38</width>
+              <height>38</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_cerrar">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="../resources.qrc">
+              <normaloff>:/iconos/recursos/icons8-cerrar-ventana-100.png</normaloff>:/iconos/recursos/icons8-cerrar-ventana-100.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>38</width>
+              <height>38</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_contenido">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>1</number>
+          </property>
+          <property name="topMargin">
+           <number>1</number>
+          </property>
+          <property name="rightMargin">
+           <number>1</number>
+          </property>
+          <property name="bottomMargin">
+           <number>1</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="frame_control">
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>0</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QFrame{
+background-color: white;
+}
+QPushButton{
+background-color: rgb(61, 61, 61);
+border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+color: rgb(255, 255, 255);
+font: 77 10pt &quot;Arial Black&quot;;
+}
+QPushButton:hover{
+background-color: white;
+border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+color: rgb(0, 0, 0);
+font: 77 10pt &quot;Arial Black&quot;;
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <item>
+              <widget class="QPushButton" name="consultar_nave">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+background-color: white;
+}</string>
+               </property>
+               <property name="text">
+                <string>Consultar Naves</string>
+               </property>
+               <property name="icon">
+                <iconset resource="../resources.qrc">
+                 <normaloff>:/iconos/recursos/icons8-search-100.png</normaloff>:/iconos/recursos/icons8-search-100.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>40</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="crear_tripulada">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+background-color: white;
+}</string>
+               </property>
+               <property name="text">
+                <string>Crear Tripulada</string>
+               </property>
+               <property name="icon">
+                <iconset resource="../resources.qrc">
+                 <normaloff>:/iconos/recursos/icons8-ciencia-ficción-48.png</normaloff>:/iconos/recursos/icons8-ciencia-ficción-48.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>40</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="crear_lanzadera">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+background-color: white;
+}</string>
+               </property>
+               <property name="text">
+                <string>Crear Lanzadera</string>
+               </property>
+               <property name="icon">
+                <iconset resource="../resources.qrc">
+                 <normaloff>:/iconos/recursos/icons8-cohete-48.png</normaloff>:/iconos/recursos/icons8-cohete-48.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>40</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="crear_no_tripulada">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+background-color: white;
+}</string>
+               </property>
+               <property name="text">
+                <string>Crear No Tripulada</string>
+               </property>
+               <property name="icon">
+                <iconset resource="../resources.qrc">
+                 <normaloff>:/iconos/recursos/icons8-satelite-64.png</normaloff>:/iconos/recursos/icons8-satelite-64.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>40</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_ventanas">
+            <property name="styleSheet">
+             <string notr="true">QFrame{
+background-color: rgb(61, 61, 61);
+}
+QLabel{
+font: 87 12pt&quot;Arial Black&quot;;
+background-color: #000000ff;
+color: rgb(0, 206, 151);
+border: 0px solid #14C8DC;
+}
+QLineEdit{
+border:0px;
+color: rgb(255, 255, 255);
+border-bottom: 2px solid rgb(61, 61, 61);
+font: 75 10pt&quot;Arial Black&quot;;
+}
+QPushButton{
+background-color: rgb(61, 61, 61);
+border-radius: 15px;
+color: rgb(255, 255, 255);
+font: 77 10pt&quot;Arial Black&quot;;
+}
+QPushButton:hover{
+background-color: rgb(0, 206, 151);
+border-radius: 15px;
+color: rgb(0, 0, 0);
+font: 77 10pt&quot;Arial Black&quot;;
+}
+QTableWidget{
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+gridline-color: rgb(0, 206, 151);
+font-size: 12pt;
+color: #000000;
+}
+QHeaderView::section{
+background-color: rgb(0, 206, 151);
+border: 1px solid rgb(0, 0, 0);
+font-size: 12pt;
+}
+QTableWidgetQTableCornerButton::section{
+background-color: rgb(0, 0, 0); 
+border: 1px solid rgb(0, 206, 151);
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <item>
+              <widget class="QStackedWidget" name="stackedWidget">
+               <property name="currentIndex">
+                <number>0</number>
+               </property>
+               <widget class="QWidget" name="pg_crear_no_tripulada">
+                <layout class="QVBoxLayout" name="verticalLayout_6">
+                 <item>
+                  <widget class="QLabel" name="lbl_nave_no_tripulada">
+                   <property name="text">
+                    <string>REGISTRAR NAVE NO TRIPULADA</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="verticalSpacer_3">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>58</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <layout class="QFormLayout" name="formLayout_2">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="lbl_nombre_no_tripulada">
+                     <property name="text">
+                      <string>Nombre</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="0">
+                    <widget class="QLabel" name="lbl_pais_no_tripulada">
+                     <property name="text">
+                      <string>Pais</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="3" column="0">
+                    <widget class="QLabel" name="lbl_peso_no_tripulada">
+                     <property name="text">
+                      <string>Peso</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="4" column="0">
+                    <widget class="QLabel" name="lbl_empuje_no_tripulada">
+                     <property name="text">
+                      <string>Empuje</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="5" column="0">
+                    <widget class="QLabel" name="lbl_velocidad_no_tripulada">
+                     <property name="text">
+                      <string>Velocidad</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="6" column="0">
+                    <widget class="QLabel" name="lbl_combustible_no_tripulada">
+                     <property name="text">
+                      <string>Combustible</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="7" column="0">
+                    <widget class="QLabel" name="lbl_cantidad_motores_no_tripulada">
+                     <property name="text">
+                      <string>Cantidad de motores</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="8" column="0">
+                    <widget class="QLabel" name="lbl_planeta_exploracion_no_tripulada">
+                     <property name="text">
+                      <string>Planeta de exploración</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QLineEdit" name="ql_nombre_no_tripulada"/>
+                   </item>
+                   <item row="2" column="1">
+                    <widget class="QLineEdit" name="ql_pais_no_tripulada"/>
+                   </item>
+                   <item row="3" column="1">
+                    <widget class="QLineEdit" name="ql_peso_no_tripulada"/>
+                   </item>
+                   <item row="4" column="1">
+                    <widget class="QLineEdit" name="ql_empuje_no_tripulada"/>
+                   </item>
+                   <item row="5" column="1">
+                    <widget class="QLineEdit" name="ql_velocidad_no_tripulada"/>
+                   </item>
+                   <item row="6" column="1">
+                    <widget class="QLineEdit" name="ql_combustible_no_tripulada"/>
+                   </item>
+                   <item row="7" column="1">
+                    <widget class="QLineEdit" name="ql_cantidad_motores_no_tripulada"/>
+                   </item>
+                   <item row="8" column="1">
+                    <widget class="QLineEdit" name="ql_planeta_exploracion_no_tripulada"/>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QLabel" name="lbl_anio_no_tripulada">
+                     <property name="text">
+                      <string>Año</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QLineEdit" name="ql_anio_no_tripulada"/>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <spacer name="verticalSpacer_4">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>57</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_6">
+                   <item>
+                    <spacer name="horizontalSpacer_5">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>40</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="btn_registrar_no_tripulada">
+                     <property name="text">
+                      <string>REGISTRAR</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <spacer name="horizontalSpacer_7">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>40</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <spacer name="verticalSpacer_6">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="pg_consultas">
+                <layout class="QVBoxLayout" name="verticalLayout_4">
+                 <item>
+                  <widget class="QLabel" name="lbl_consulta_general">
+                   <property name="text">
+                    <string>CONSULTA GENERAL</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QTableWidget" name="tbl_consulta_sencilla">
+                   <property name="minimumSize">
+                    <size>
+                     <width>700</width>
+                     <height>178</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>700</width>
+                     <height>178</height>
+                    </size>
+                   </property>
+                   <column>
+                    <property name="text">
+                     <string>Nombre</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Pais</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Peso</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Velocidad</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>TipoNave</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Año</string>
+                    </property>
+                   </column>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_4">
+                   <item>
+                    <spacer name="horizontalSpacer_3">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>40</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="btn_consulta_sencilla">
+                     <property name="minimumSize">
+                      <size>
+                       <width>100</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>100</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string>CONSULTAR</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <spacer name="horizontalSpacer_2">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>40</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="lbl_consulta_avanzada">
+                   <property name="text">
+                    <string>CONSULTA AVANZADA</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QTableWidget" name="tbl_consulta_avanzada">
+                   <property name="minimumSize">
+                    <size>
+                     <width>700</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>700</width>
+                     <height>166</height>
+                    </size>
+                   </property>
+                   <column>
+                    <property name="text">
+                     <string>Nombre</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Pais</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Peso</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Velocidad</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>TipoNave</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Año</string>
+                    </property>
+                   </column>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QGridLayout" name="gridLayout">
+                   <item row="1" column="1">
+                    <widget class="QLineEdit" name="ql_ano_nave"/>
+                   </item>
+                   <item row="1" column="3">
+                    <widget class="QPushButton" name="btn_consulta_avanzada">
+                     <property name="minimumSize">
+                      <size>
+                       <width>100</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>100</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string>CONSULTAR</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QLineEdit" name="ql_tipo_nave"/>
+                   </item>
+                   <item row="1" column="2">
+                    <widget class="QLineEdit" name="ql_pais_nave"/>
+                   </item>
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="lbl_tipo_nave">
+                     <property name="text">
+                      <string>Tipo de Nave</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QLabel" name="lbl_ano">
+                     <property name="text">
+                      <string>Año</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="2">
+                    <widget class="QLabel" name="lbl_pais_nave">
+                     <property name="text">
+                      <string>País</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+                <zorder>lbl_consulta_general</zorder>
+                <zorder>horizontalLayoutWidget</zorder>
+                <zorder>tbl_consulta_sencilla</zorder>
+                <zorder>tbl_consulta_avanzada</zorder>
+                <zorder>lbl_consulta_avanzada</zorder>
+                <zorder>gridLayoutWidget</zorder>
+               </widget>
+               <widget class="QWidget" name="pg_crear_lanzadera">
+                <layout class="QVBoxLayout" name="verticalLayout_7">
+                 <item>
+                  <widget class="QLabel" name="label_lanzadera">
+                   <property name="text">
+                    <string>REGISTRAR LANZADERA</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="verticalSpacer_9">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <layout class="QFormLayout" name="formLayout_3">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="lbl_nombre_lanzadera">
+                     <property name="text">
+                      <string>Nombre</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QLineEdit" name="ql_nombre_lanzadera"/>
+                   </item>
+                   <item row="2" column="0">
+                    <widget class="QLabel" name="lbl_pais_lanzadera">
+                     <property name="text">
+                      <string>Pais</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="1">
+                    <widget class="QLineEdit" name="ql_pais_lanzadera"/>
+                   </item>
+                   <item row="3" column="0">
+                    <widget class="QLabel" name="lbl_peso_lanzadera">
+                     <property name="text">
+                      <string>Peso</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="3" column="1">
+                    <widget class="QLineEdit" name="ql_peso_lanzadera"/>
+                   </item>
+                   <item row="4" column="0">
+                    <widget class="QLabel" name="lbl_altura_lanzadera">
+                     <property name="text">
+                      <string>Altura</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="4" column="1">
+                    <widget class="QLineEdit" name="ql_altura_lanzadera"/>
+                   </item>
+                   <item row="5" column="0">
+                    <widget class="QLabel" name="lbl_potencia_lanzadera">
+                     <property name="text">
+                      <string>Potencia</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="5" column="1">
+                    <widget class="QLineEdit" name="ql_potencia_lanzadera"/>
+                   </item>
+                   <item row="6" column="0">
+                    <widget class="QLabel" name="lbl_velocidad_lanzadera">
+                     <property name="text">
+                      <string>Velocidad</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="6" column="1">
+                    <widget class="QLineEdit" name="ql_velocidad_lanzadera"/>
+                   </item>
+                   <item row="7" column="0">
+                    <widget class="QLabel" name="lbl_carga_util_lanzadera">
+                     <property name="text">
+                      <string>Carga Útil</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="7" column="1">
+                    <widget class="QLineEdit" name="ql_carga_util_lanzadera"/>
+                   </item>
+                   <item row="8" column="0">
+                    <widget class="QLabel" name="lbl_autonomia_lanzadera">
+                     <property name="text">
+                      <string>Autonomia</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="8" column="1">
+                    <widget class="QLineEdit" name="ql_autonomia_lanzadera"/>
+                   </item>
+                   <item row="9" column="0">
+                    <widget class="QLabel" name="lbl_combustible_lanzadera">
+                     <property name="text">
+                      <string>Combustible</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="9" column="1">
+                    <widget class="QLineEdit" name="ql_combustible_lanzadera"/>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QLabel" name="lbl_anio_lanzadera">
+                     <property name="text">
+                      <string>Año</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QLineEdit" name="ql_anio_lanzadera"/>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <spacer name="verticalSpacer_7">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>41</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_7">
+                   <item>
+                    <spacer name="horizontalSpacer_8">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>40</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="btn_registrar_lanzadera">
+                     <property name="text">
+                      <string>REGISTRAR</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <spacer name="horizontalSpacer_9">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>40</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <spacer name="verticalSpacer_8">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="pg_crear_tripulada">
+                <layout class="QVBoxLayout" name="verticalLayout_3">
+                 <item>
+                  <widget class="QLabel" name="lbl_nave_tripulada">
+                   <property name="text">
+                    <string>REGISTRAR NAVE TRIPULADA</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="verticalSpacer">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>61</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <layout class="QFormLayout" name="formLayout">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="lbl_nombre_tripulada">
+                     <property name="text">
+                      <string>Nombre</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="0">
+                    <widget class="QLabel" name="lbl_pais_tripulada">
+                     <property name="text">
+                      <string>Pais</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="3" column="0">
+                    <widget class="QLabel" name="lbl_peso_tripulada">
+                     <property name="text">
+                      <string>Peso</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="4" column="0">
+                    <widget class="QLabel" name="lbl_orbita_tripulada">
+                     <property name="text">
+                      <string>Orbita</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="5" column="0">
+                    <widget class="QLabel" name="lbl_capacidad_tripulada">
+                     <property name="text">
+                      <string>Capacidad</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="6" column="0">
+                    <widget class="QLabel" name="lbl_velocidad_tripulada">
+                     <property name="text">
+                      <string>Valocidad</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="7" column="0">
+                    <widget class="QLabel" name="lbl_tipo_mision_tripulada">
+                     <property name="text">
+                      <string>Tipo de Misión</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="8" column="0">
+                    <widget class="QLabel" name="lbl_nombre_mision_tripulada">
+                     <property name="text">
+                      <string>Nombre de la Misión</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QLineEdit" name="ql_nombre_tripulada"/>
+                   </item>
+                   <item row="2" column="1">
+                    <widget class="QLineEdit" name="ql_pais_tripulada"/>
+                   </item>
+                   <item row="3" column="1">
+                    <widget class="QLineEdit" name="ql_peso_tripulada"/>
+                   </item>
+                   <item row="4" column="1">
+                    <widget class="QLineEdit" name="ql_orbita_tripulada"/>
+                   </item>
+                   <item row="5" column="1">
+                    <widget class="QLineEdit" name="ql_capacidad_tripulada"/>
+                   </item>
+                   <item row="6" column="1">
+                    <widget class="QLineEdit" name="ql_velocidad_tripulada"/>
+                   </item>
+                   <item row="7" column="1">
+                    <widget class="QLineEdit" name="ql_tipo_mision_tripulada"/>
+                   </item>
+                   <item row="8" column="1">
+                    <widget class="QLineEdit" name="ql_nombre_mision_tripulada"/>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QLabel" name="lbl_anio_tripulada">
+                     <property name="text">
+                      <string>Año</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QLineEdit" name="ql_anio_tripulada"/>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <spacer name="verticalSpacer_2">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>62</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_5">
+                   <item>
+                    <spacer name="horizontalSpacer_4">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>40</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="btn_registrar_tripulada">
+                     <property name="text">
+                      <string>REGISTRAR</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <spacer name="horizontalSpacer_6">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>40</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <spacer name="verticalSpacer_5">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+         <zorder>frame_ventanas</zorder>
+         <zorder>frame_control</zorder>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

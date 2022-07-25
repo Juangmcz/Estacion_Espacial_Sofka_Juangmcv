@@ -117,15 +117,12 @@ De la siguiente manera:
 
 ## Mantente en contacto
 
-Autor - [Juan Guillermo Muñoz Correa](www.linkedin.com/in/juan-guillermo-muñoz-correa-95b817128 "Juan Guillermo Muñoz Correa")
+Autor - [Juan Guillermo Muñoz Correa](www.linkedin.com/in/juan-guillermo-muñoz-correa-95b817128)
 
 ---
 
 ## Licencia
 
-![Documentación oficial QT](https://doc.qt.io/style/qt-logo-documentation.svg)
+![Documentación oficial QT](https://doc.qt.io/style/qt-logo-documentation.svg) [Terminos y condiciones](https://www.qt.io/terms-conditions/ "Terminos y condiciones")
 
-[Terminos y condiciones](https://www.qt.io/terms-conditions/ "Terminos y condiciones")
-
-![Python](https://www.python.org/static/img/python-logo.png "Python")
-[Terminos y condiciones](https://docs.python.org/3/license.html "Terminos y condiciones")
+![Python](https://www.python.org/static/img/python-logo.png "Python") [Terminos y condiciones](https://docs.python.org/3/license.html "Terminos y condiciones")

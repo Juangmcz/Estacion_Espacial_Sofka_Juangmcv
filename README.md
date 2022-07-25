@@ -22,7 +22,7 @@ A su vez estas entidades poseen atributos y métodos que nos van a permitir inte
 
 En el siguiente diagrama se muestran cada una de las clases junto con sus atributos y métodos, asi también como la relación entre ellas.
 
-[Diagrama UML](/recursos/Naves-POO.png)
+![Diagrama UML](/recursos/Naves-POO.png)
 
 ### Base de datos
 

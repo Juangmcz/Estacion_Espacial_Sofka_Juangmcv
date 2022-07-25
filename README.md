@@ -52,6 +52,10 @@ Y verificamos que aparezcan todas las librerias en la lista.
 
 #### Base de datos
 
+En este caso se hizo uso del motor de bases SQL SERVER, por lo tanto se debe de tener instalado el siguiente [driver](https://docs.microsoft.com/en-us/sql/connect/odbc/download-odbc-driver-for-sql-server?view=sql-server-ver16 "driver") para poder realizar la conexión a la base de datos.
+
+##### Restauración
+
 Para reconstruir la base de datos, se hace uso del archivo de respaldo de la base de datos, el cual esta almacenado en la siguiente ruta:
 
 ```
@@ -70,7 +74,7 @@ En donde se encuentran los siguientes archivos:
 > - No_Tripuladas.sql
 > - Lanzaderas.sql
 
-##### Conexión base de datos
+##### Conexión
 
 Para cambiar la conexión a la base de datos, se debe de ingresar a la siguiente ruta:
 
@@ -106,5 +110,4 @@ Autor - [Juan Guillermo Muñoz Correa](www.linkedin.com/in/juan-guillermo-muñoz
 [Terminos y condiciones](https://www.qt.io/terms-conditions/ "Terminos y condiciones")
 
 ![Python](https://www.python.org/static/img/python-logo.png "Python")
-
 [Terminos y condiciones](https://docs.python.org/3/license.html "Terminos y condiciones")

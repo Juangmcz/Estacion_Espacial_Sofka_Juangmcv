@@ -16,6 +16,24 @@ A su vez estas entidades poseen atributos y métodos que nos van a permitir inte
 
 ---
 
+## Modelamiento
+
+### Objetos (Naves)
+
+En el siguiente diagrama se muestran cada una de las clases junto con sus atributos y métodos, asi también como la relación entre ellas.
+
+[Diagrama UML](/recursos/Naves-POO.png)
+
+### Base de datos
+
+En los siguientes diagramas, se aprecian las caracteristicas de cada una de las tablas de la base de datos.
+
+![Diagrama DER lanzaderas](/recursos/DER_lanzaderas.png)
+![Diagrama DER No Tripuladas](/recursos/DER_no_tripuladas.png)
+![Diagrama DER Tripuladas](/recursos/DER_tripuladas.png)
+
+---
+
 ## Caracteristicas
 
 - Crear naves de tipo: tripuladas, no tripuladas y lanzaderas.
@@ -34,7 +52,7 @@ El programa esta desarrollado completamente en [Python](https://www.python.org/ 
 
 ## Ejecución
 
-#### Librerias
+### Librerias
 
 Para ejecutar el programa, se deben de instalar todas las librerias descritas en el archivo requirements.txt. Esta instalación se puede hacer de manera rapida con el siguiente comando:
 
@@ -50,11 +68,11 @@ pip frezee
 
 Y verificamos que aparezcan todas las librerias en la lista.
 
-#### Base de datos
+### Base de datos
 
 En este caso se hizo uso del motor de bases SQL SERVER, por lo tanto se debe de tener instalado el siguiente [driver](https://docs.microsoft.com/en-us/sql/connect/odbc/download-odbc-driver-for-sql-server?view=sql-server-ver16 "driver") para poder realizar la conexión a la base de datos.
 
-##### Restauración
+#### Restauración
 
 Para reconstruir la base de datos, se hace uso del archivo de respaldo de la base de datos, el cual esta almacenado en la siguiente ruta:
 
@@ -74,7 +92,7 @@ En donde se encuentran los siguientes archivos:
 > - No_Tripuladas.sql
 > - Lanzaderas.sql
 
-##### Conexión
+#### Conexión
 
 Para cambiar la conexión a la base de datos, se debe de ingresar a la siguiente ruta:
 
